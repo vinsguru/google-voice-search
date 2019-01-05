@@ -1,17 +1,16 @@
 
-#Advanced Page Objects Pattern
+# Advanced Page Objects Pattern
 Aim of this project is to show the Page Fragment concepts to create advanced page object pattern using Arquillian Graphene framework &
 its Fluent Waiting API.
 
 More details are [here](http://www.testautomationguru.com/arquillian-graphene-page-fragments/).
 
-#Voice Search
-This project also includes simple automation scripts to automate google voice search. We need a talking library to google voice search.
-Please download and refercence the jar lib files from [here](http://freetts.sourceforge.net/docs/index.php). (It requires you to accept terms & conditions - 
-so I have not included thr jars in this project).
+# Voice Search
+This project also includes simple automation scripts to automate google voice search. We need a talking library to google voice search. I use freeTTS library.
+.
 
 
-#Talking Java
+# Talking Java
 ```java
 import com.sun.speech.freetts.VoiceManager;
   
@@ -34,7 +33,7 @@ public class SpeakUtil {
 }
 ```
 
-#Google search widget
+# Google search widget
 ```java
 public class GoogleSearchWidget {
      
@@ -104,7 +103,7 @@ public class GoogleSearchWidget {
 }
 ```
 
-#TestNG Test
+# TestNG Test
 ```java
 public class GoogleVoiceTest extends Arquillian{
      

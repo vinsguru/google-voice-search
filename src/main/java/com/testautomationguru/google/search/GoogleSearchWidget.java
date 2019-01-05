@@ -8,7 +8,7 @@ import org.openqa.selenium.support.FindBy;
 
 public class GoogleSearchWidget {
 	
-	@FindBy(id="gsri_ok0")
+	@FindBy(css="span.hb2Smf")
 	private WebElement microphone;
 	
 	@FindBy(name="q")

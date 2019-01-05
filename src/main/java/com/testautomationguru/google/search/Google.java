@@ -1,5 +1,6 @@
 package com.testautomationguru.google.search;
 
+
 import org.jboss.arquillian.drone.api.annotation.Drone;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
@@ -9,7 +10,7 @@ public class Google {
 	@Drone
 	private WebDriver driver;
 	
-	@FindBy(id="sbtc")
+	@FindBy(id="searchform")
 	private GoogleSearchWidget searchWidget;
 	
 	@FindBy(id="rso")

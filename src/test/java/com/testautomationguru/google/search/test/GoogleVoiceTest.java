@@ -2,7 +2,7 @@ package com.testautomationguru.google.search.test;
 
 import org.jboss.arquillian.graphene.page.Page;
 import org.jboss.arquillian.testng.Arquillian;
-import org.junit.Assert;
+import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
@@ -39,8 +39,8 @@ public class GoogleVoiceTest extends Arquillian{
     public static Object[][] voiceSearchTestData() {
        return new Object[][] {
     		   {"weather today"}, 
-    		   {"show me the direction for atlanta"}, 
-    		   {"magnificent 7 show timings"}, 
+    		   {"show me the direction for atlanta from new york"},
+    		   {"magnificent seven showtimes"},
     		   {"will it rain tomorrow"}, 
     		   {"arquillian graphene"}
        };

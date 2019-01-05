@@ -7,7 +7,8 @@ public class SpeakUtil {
 	static com.sun.speech.freetts.Voice systemVoice = null;
 	
 	public static void allocate(){
-		systemVoice = VoiceManager.getInstance().getVoice("kevin16");
+		System.setProperty("freetts.voices", "com.sun.speech.freetts.en.us.cmu_us_kal.KevinVoiceDirectory");
+		systemVoice = VoiceManager.getInstance().getVoice("kevin");
 		systemVoice.allocate();
 	}
 	
